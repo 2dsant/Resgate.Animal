@@ -1,0 +1,22 @@
+<mat-dialog-content class="mat-typography">
+    <div id="container">
+
+        <div id="img-animal">
+            <img src="{{data.animal.src}}" alt="">
+        </div>
+
+        <div id="desc-animal">
+            <p id="title">{{data.animal.nome}} - {{data.animal.idade}} ano(s)</p>
+
+            <p id="dsc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, minus cum, consequatur 
+                modi maxime sint totam repellendus nesciunt porro vitae officia corporis excepturi commodi adipisci voluptate expedita error, natus iste?
+            </p>
+
+            
+            <div id="container-btn" style="margin: 20px">
+                <span (click)="adotarModal()" id="btn-adotar">Adotar</span>
+            </div>
+        </div>
+    </div>
+</mat-dialog-content>

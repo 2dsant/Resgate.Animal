@@ -1,0 +1,86 @@
+#container {
+    min-height: 80vh;
+    margin: 50px 0 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#title {
+    font-weight: 500;
+    font-size: 1.50rem;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    margin: 50px;
+}
+
+.imagens {
+    height: 200px;
+}
+
+#filtros {
+    margin: 0 auto;
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#title-hr {
+    width: 960px;
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #FFBB11;
+    padding: 0;
+}
+
+#btn-pesquisar {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFBB11;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.example-card {
+  width: 30%;
+  margin-top: 20px;
+}
+
+.animal-resumo::before{
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  margin-right: 8px;
+  background-color: #FFBB11;
+  position: relative;
+  top: 5px;
+}
+
+/* .cards-animais {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 960px;
+} */
+.cards-animais {
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}

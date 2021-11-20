@@ -1,0 +1,84 @@
+<div id="background-color">
+    <div id="background">
+    <div id="background-img">
+    </div>
+    <div id="cards-container">
+        <div class="cards">
+            <h2>+800 ANIMAIS RESGATADOS</h2>
+        </div>
+
+        <div class="cards">
+            <h2>+500 ANIMAIS COM UM NOVO LAR</h2>
+        </div>
+
+        <div class="cards">
+            <h2>+200 ANIMAIS ESPERANDO UM NOVO LAR</h2>
+        </div>
+    </div>
+
+    <section class="text-align">
+        <div id="container-btn" [routerLink]="['/adocao']">
+            <span id="btn-adotar">QUERO ADOTAR</span>
+        </div>
+
+        <div class="subtitle">
+            <div class="subtitle-img">
+                <img src="assets/pawprints.png" alt="">
+            </div>
+            <h2 id="title-intro">
+                Como Trabalhamos?
+            </h2>
+        </div>
+
+        <div id="cards-intro">
+            <div class="card-02">
+                <p>
+                    1. Recebemos a denúncia
+                </p>
+            </div>
+            <div class="card-02">
+                <p>
+                    2. Averiguamos e resgatamos os animais
+                </p>
+            </div>
+            <div class="card-02">
+                <p>
+                    3. Realizamos exames para detectar o estado de sáude do animal
+                </p>
+            </div>
+            <div class="card-02">
+                <p>
+                    4. Sabemos que o processo de adotação pode ser demorado. Por isso temos um cantinho especial para
+                    eles
+                </p>
+            </div>
+            <div class="card-02">
+                <p>
+                    5. Se estiver tudo ok o animal é disponibilizado para a ser adotado.
+                </p>
+            </div>
+            <div class="card-02">
+                <p>
+                    6. Caso o animal esteja com algum tipo de enfermidade realizamos o tratamento até que ele esteja
+                    pronto
+                </p>
+            </div>
+        </div>
+
+        <div class="subtitle">
+            <div class="subtitle-img">
+                <img src="assets/pawprints.png" alt="">
+            </div>
+            <h2 id="title-intro">
+                Conheça algumas das <br> nossas histórias
+            </h2>
+        </div>
+
+
+        <carousel [images]="images" [objectFit]="'none'" [cellWidth]="'100%'" [height]="400" [arrowsOutside]="false"
+            [autoplay]="true" [dots]="true" [loop]="true">
+        </carousel>
+
+    </section>
+</div>
+</div>

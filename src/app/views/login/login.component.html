@@ -1,0 +1,22 @@
+<form [formGroup]="formLogin" class="example-form">
+    <div class="full-width">
+      <div class="full-width">
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput formControlName="email">
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Senha</mat-label>
+          <input type="password" matInput formControlName="senha">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <span (click)="closeModal()" [routerLink]="['cadastro-usuario']" id="cadastrar">Cadastrar</span>
+
+    <div id="container-btn"  style="margin: 20px" (click)="login()">
+      <button id="btn-login">Login</button>
+    </div>
+</form>  

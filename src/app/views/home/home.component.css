@@ -1,0 +1,128 @@
+.cards {
+    background: #EBEBEB;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+    margin: 0 20px 0 20px;
+    color: #5C5C5C;
+    border: 3px solid #FFBB11;
+    height: 200px;
+    width: 220px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#background{
+    background-color: #E3E3E3;
+}
+
+#background-img {
+    width: 960px;
+    max-width: 960px;
+    height: 500px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-image: url(/assets/fundo-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -70px;
+}
+
+#cards-container {
+    margin: 0 auto;
+    max-width: 960PX;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: -5rem;
+    background-color: transparent;
+}
+
+#container-btn {
+    margin: 50px 0 50px 0;
+}
+
+.text-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-adotar {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFBB11;
+    border: none;
+    color: white;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.subtitle {
+    display: flex;
+    margin: 30px 0 30px 0;
+}
+
+.subtitle-img img {
+    margin: 0 5px 0 5px;
+    width: 115px;
+    height: 117px;
+    max-width: 115px;
+    transform: rotate(95.98deg);
+    opacity: 60%;
+}
+
+#title-intro {
+    text-transform: uppercase;
+    color: #333333;
+    font-weight: 500;
+    font-size: 48px;
+    text-align: center;
+}
+
+#cards-intro {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-02 {
+    width: 250px;
+    height: 196px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background: #EBEBEB;
+    border: 2px solid #FFBB11;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.card-02 p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #5c5c5c;
+    text-align: center;   
+}

@@ -1,0 +1,70 @@
+
+#footer-links h2, a {
+    text-decoration: none;
+    color: white;
+    margin: 10px 0 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+
+#container-footer {
+    margin: 0 auto;
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#logo-footer {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#logo-footer img {
+    max-width: 30%;
+}
+
+#logo-footer p {
+    font-weight: 700;
+}
+
+#logo-footer img {
+    max-width: 30%;
+    filter: contrast(0.3);
+}
+
+#footer-contato {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+}
+
+#footer-contato h2, p {
+    color: white;
+    margin: 10px 0 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+#footer-links {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+}
+
+#nome-empresa {
+    color: #818181;
+}
+
+.link-footer {
+    display: block;
+    margin-bottom: 15px;
+}

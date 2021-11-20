@@ -1,0 +1,57 @@
+<div id="container">
+    <h1 id="title">Escolha seu novo companheiro</h1>
+    <hr id="title-hr">
+    <div>
+        <div id="filtros">
+            <div class="input-filtro">
+                <mat-form-field appearance="fill">
+                    <mat-label>Sexo</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let item of sexo" [value]="item.sexo">
+                            {{item.label}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div class="input-filtro">
+                <mat-form-field appearance="fill">
+                    <mat-label>Animal</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let item of tipAnimal" [value]="item.tipo">
+                            {{item.animal}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div class="input-filtro">
+                <mat-form-field appearance="fill">
+                    <mat-label>Porte</mat-label>
+                    <mat-select [(ngModel)]="porteSelecionado">
+                        <mat-option *ngFor="let item of tipPorte" [value]="item.tipo">
+                            {{item.porte}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <div id="container-btn" style="margin: 20px" (click)="filtro()">
+            <span id="btn-pesquisar">Pesquisar</span>
+        </div>
+    </div>
+    <div class="cards-animais">
+
+        <ng-container *ngFor="let item of listaAnimais">
+
+            <mat-card (click)="openDialog(item)" class="example-card mat-elevation-z9">
+                <img class="imagens" mat-card-image src="{{item.src}}" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <h5 class="animal-resumo">{{item.nome}} - {{item.idade}} ano(s)</h5>
+                </mat-card-content>
+            </mat-card>
+        </ng-container>
+
+    
+    </div>
+</div>>

@@ -1,0 +1,107 @@
+<form [formGroup]="form" style="height: 80vh;">
+  <mat-tab-group mat-align-tabs="center">
+    <mat-tab label="Dados Pessoais" formGroupName="pessoa">
+      <div id="container-inputs">
+        <div class="full-width">
+          <mat-form-field appearance="fill" style="margin: 0 10px;">
+            <mat-label>Nome Completo</mat-label>
+            <input matInput formControlName="nome">
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>CPF</mat-label>
+            <input matInput formControlName="cpf">
+          </mat-form-field>
+        </div>
+
+        <div class="full-width">
+          <mat-form-field appearance="fill" style="margin: 0 10px;">
+            <mat-label>Telefone</mat-label>
+            <input matInput formControlName="telefone">
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Sexo</mat-label>
+            <mat-select formControlName="sexo">
+              <mat-option value="F">
+                Feminino
+              </mat-option>
+              <mat-option value="M">
+                Masculino
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="full-width">
+          <mat-form-field appearance="fill">
+            <mat-label>Nascimento</mat-label>
+            <input matInput formControlName="nascimento" [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Usuário" formGroupName="usuario">
+      <div id="container-inputs">
+        <div class="full-width">
+          <div class="full-width">
+            <mat-form-field appearance="fill" style="margin: 0 10px;">
+              <mat-label>Email</mat-label>
+              <input type="email" matInput formControlName="email">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+              <mat-label>Senha</mat-label>
+              <input type="password" matInput formControlName="senha">
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Endereço" formGroupName="endereco">
+      <div id="container-inputs">
+        <div class="full-width">
+          <mat-form-field appearance="fill" style="margin: 0 10px;">
+            <mat-label>Cep</mat-label>
+            <input matInput formControlName="cep">
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Rua</mat-label>
+            <input matInput formControlName="rua">
+          </mat-form-field>
+        </div>
+
+        <div class="full-width">
+          <mat-form-field appearance="fill" style="margin: 0 10px;">
+            <mat-label>Cidade</mat-label>
+            <input matInput formControlName="cidade">
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>UF</mat-label>
+            <mat-select formControlName="uf">
+              <mat-option *ngFor="let item of listUf" [value]="item.sigla">
+                {{item.nome}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="full-width">
+          <mat-form-field appearance="fill">
+            <mat-label>Pais</mat-label>
+            <input matInput formControlName="pais">
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+
+  <div id="container-btn"  style="margin: 20px">
+    <span (click)="salvaUsuario()" id="btn-cadastrar">Cadastrar</span>
+  </div>
+</form>

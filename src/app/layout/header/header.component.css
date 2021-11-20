@@ -1,0 +1,82 @@
+#img-logo {
+    margin-left: 10px;
+    max-width: 50px;
+    opacity: 60%;
+}
+
+.menu-container {
+    width: 960px;
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.nav-container ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-container a{
+    color: #5C5C5C;
+    margin-right: 10px;
+}
+
+.cards-container {
+    background-color: transparent;
+}
+
+#background-img {
+    width: 960px;
+    max-width: 960px;
+    height: 500px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-image: url(/assets/fundo-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -70px;
+}
+
+/*==== HEADER LOGADO ====*/
+#header {
+    border-bottom: 1px solid #C0C0C0;
+}
+
+#img-logo {
+    margin-left: 10px;
+    max-width: 50px;
+    opacity: 60%;
+    cursor: pointer;
+}
+
+.menu-container {
+    width: 960px;
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.nav-container ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-container a{
+    color: #5C5C5C;
+    margin-right: 20px;
+}

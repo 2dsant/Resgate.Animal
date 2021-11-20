@@ -1,0 +1,39 @@
+<ng-container *ngIf="logged">
+    <header id="header">
+        <div class="menu-container">
+            <div class="logo-container">
+                <img [routerLink]="['cadastro-usuario']" id="img-logo" src="assets/house.png" alt="Logo">
+            </div>
+            <div class="nav-container">
+                <ul>
+                    <li><a href="#">Quero adotar</a></li>
+                    <li><a href="#">Quero fazer uma doação</a></li>
+                </ul>
+            </div>
+            <div class="nav-usuario">
+                <p>David</p>
+            </div>
+            
+        </div>
+    </header>
+
+</ng-container>
+
+<ng-container *ngIf="!logged">
+    <!-- <div id="background-img" > -->
+    <header>
+            <div class="menu-container">
+                <div class="logo-container">
+                    <img [routerLink]="['home']" id="img-logo" src="assets/house.png" alt="Logo">
+                </div>
+                <div class="nav-container">
+                    <ul>
+                        <li><span [routerLink]="['OProjeto']" style="color: #5C5C5C; margin-right: 10px; cursor: pointer;">Conheça o projeto</span></li>
+                        <li><span [routerLink]="['doar']" style="color: #5C5C5C; margin-right: 10px; cursor: pointer;">Faça uma doação</span></li>
+                        <li (click)="loginModal()"><span style="color: #5C5C5C; margin-right: 10px; cursor: pointer;">Login/Criar Conta</span></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    <!-- </div> -->
+</ng-container>
